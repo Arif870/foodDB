@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Food DB</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+
+    <style>
+      #spinner {
+        display: none;
+      }
+    </style>
+  </head>
+  <body class="container">
+    <h1 class="text-center mt-4">Search your favourite foods here</h1>
+    <div class="input-group mb-3 w-50 mx-auto mt-4">
+      <input
+        id="food_id"
+        type="text"
+        class="form-control"
+        placeholder="Search Foods"
+        aria-label="Recipient's username"
+        aria-describedby="button-addon2"
+      />
+      <button class="btn btn-success" type="button" id="food_button">
+        Search
+      </button>
+    </div>
+
+    <!-- spinner  -->
+    <div class="d-flex justify-content-center">
+      <div class="spinner-border text-success" id="spinner" role="status">
+        <span class="visually-hidden">Loading...</span>
+      </div>
+    </div>
+
+    <div class="row row-cols-1 row-cols-md-3 g-4" id="main_div"></div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./mealdb.js"></script>
+  </body>
+</html>
